@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <title>Panteon</title>
+  </head>
+
+  <body class="hero-bg">
+    <div>
+      <header>
+        <div class="nav-wrapper">
+          <div class="nav">
+            <img src="images/logo/logoS.png" alt="logo" />
+            <img src="images/nav/burger.png" alt="menu" class="burger-menu" />
+          </div>
+          <p class="nav-tel">+38 099 65 94 663</p>
+        </div>
+        <nav class="nav-link-wrapper">
+          <a class="nav-link" href="#about">Про нас</a>
+          <a class="nav-link" href="#galery">Галерея</a>
+          <a class="nav-link" href="#abonements">Абонементи</a>
+          <a class="nav-link" href="#trainers">Тренери</a>
+          <a class="nav-link" href="#contacts">Контакти</a>
+        </nav>
+      </header>
+
+      <!-- --------hero --------->
+      <section class="hero">
+        <h1 class="hero-header">Фітнес клуб Пантеон</h1>
+        <p class="hero-text">Краще за нас тільки боги</p>
+        <button class="hero-button" type="button">
+          <span class="hero-button-text">Отримати консультацію</span>
+        </button>
+        <div class="hero-icons-wrapper">
+          <img
+            class="hero-icons-arrow"
+            src="images/hero/arrow.png"
+            alt="arrow"
+          />
+          <div class="hero-icons-social-wrapper">
+            <img
+              class="hero-icons-social"
+              src="images/hero/instagram_108066.svg"
+              alt="instagram"
+            />
+            <img
+              class="hero-icons-social"
+              src="images/hero/telegram.svg"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+    </div>
+    <main>
+      <!-- ----------------life-style---------------------- -->
+      <section class="life-style" id="about">
+        <h2>Новий стиль життя</h2>
+        <p>
+          Приєднавшись до нашої команди, ви зміните звичний ритм життя та
+          зробите кожен день особливим. Формат наших тренувань дозволить вам
+          розкрити свій потенціал на 100%.
+        </p>
+        <button type="button">Отримати консультацію</button>
+        <img src="images/lifeStyle/sportGirlS.png" alt="sport women" />
+        <img src="images/lifeStyle/barbellS.png" alt="barbell" />
+      </section>
+      <section class="advantages">
+        <h2 class="visually-hidden">переваги</h2>
+        <ul class="advantages-list">
+          <li class="advantages-item">
+            <img
+              class="advantages-img"
+              src="images/advantages/icon-gym.png"
+              alt="advantages icon"
+            />
+            <p class="advantages-text">Повнісю укомплектована зала</p>
+          </li>
+          <li class="advantages-item">
+            <img
+              class="advantages-img"
+              src="images/advantages/icon-location.png"
+              alt="advantages icon"
+            />
+            <p class="advantages-text">Зручне розміщення у центрі міста</p>
+          </li>
+          <li class="advantages-item">
+            <img
+              class="advantages-img"
+              src="images/advantages/icon-barbell.png"
+              alt="advantages icon"
+            />
+            <p class="advantages-text">Професійне знаряддя</p>
+          </li>
+          <li class="advantages-item">
+            <img
+              class="advantages-img"
+              src="images/advantages/icon-wallet.png"
+              alt="advantages icon"
+            />
+            <p class="advantages-text">Доступна вартість занять</p>
+          </li>
+        </ul>
+      </section>
+      <section class="gallery">
+        <h2 class="gallery-title" id="galery">Галерея</h2>
+        <div>
+          <img
+            class="gallery-person-img"
+            src="images/gallery/person1M.png"
+            alt="person1"
+          />
+          <img
+            class="gallery-person-img"
+            src="images/gallery/person2M.png"
+            alt="person2"
+          />
+          <img
+            class="gallery-person-img"
+            src="images/gallery/person3M.png"
+            alt="person3"
+          />
+          <img
+            class="gallery-person-img"
+            src="images/gallery/person4M.png"
+            alt="person4"
+          />
+        </div>
+        <div>
+          <img
+            class="gallery-gym-img"
+            src="images/gallery/gym1M.png"
+            alt="gym"
+          />
+          <img
+            class="gallery-gym-img"
+            src="images/gallery/gym2M.png"
+            alt="gym"
+          />
+          <img
+            class="gallery-gym-img"
+            src="images/gallery/gym3M.png"
+            alt="gym"
+          />
+        </div>
+      </section>
+      <section class="abonements">
+        <h2 class="abonements-title" id="abonements">Абонементи</h2>
+
+        <div class="abonements-caption">
+          <span class="abonements-caption-text">Кіл-ть занять</span>
+          <span class="abonements-caption-text"> 1 тренування</span>
+        </div>
+
+        <ul class="abonements-list">
+          <li>
+            <p class="abonements-table-text">Кіл-ть занять</p>
+            <p class="abonements-table-text bolt">1 тренування</p>
+            <p class="abonements-table-text bolt">4 тренування</p>
+            <p class="abonements-table-text bolt">8 тренувань</p>
+            <p class="abonements-table-text bolt orange">12 тренуван</p>
+          </li>
+          <li class="abonements-table-item">
+            <p class="abonements-table-text bolt orange">
+              Персональний тренінг з інструктором
+            </p>
+            <p class="abonements-table-text price">700 грн</p>
+            <p class="abonements-table-text price">
+              2600 грн (действителен в течении 3 недель)
+            </p>
+            <p class="abonements-table-text price">
+              5200 грн (дійсний протягом 6 тижнів)
+            </p>
+            <p class="abonements-table-text bolt price">
+              7200 грн (дійсний протягом 10 тижнів)
+            </p>
+          </li>
+          <li class="abonements-table-item">
+            <p class="abonements-table-text bolt">
+              Самостійне тренування в тренажерній залі
+            </p>
+            <p class="abonements-table-text price">250 грн</p>
+            <p class="abonements-table-text price">-</p>
+            <p class="abonements-table-text price">
+              1500 грн (дійсний протягом 30 днів)
+            </p>
+            <p class="abonements-table-text price">
+              2000 грн (дійсний протягом 30 днів)
+            </p>
+          </li>
+          <li class="abonements-table-item">
+            <p class="abonements-table-text bolt">Зала групових програм</p>
+            <p class="abonements-table-text price">300 грн</p>
+            <p class="abonements-table-text price">-</p>
+            <p class="abonements-table-text price">
+              2000 грн (дійсний протягом 30 днів)
+            </p>
+            <p class="abonements-table-text price">
+              2750 грн (дійсний протягом 45 днів)
+            </p>
+          </li>
+        </ul>
+        <h3 class="abonements-subtitle">Абонементи за тривалістю</h3>
+        <ul class="abonements-list">
+          <li>
+            <p class="abonements-table-text">Тип карти</p>
+            <p class="abonements-table-text bolt">12 месяців</p>
+            <p class="abonements-table-text bolt orange">6 месяців</p>
+            <p class="abonements-table-text bolt">3 месяці</p>
+            <p class="abonements-table-text bolt">1 месяць</p>
+          </li>
+          <li class="abonements-table-item">
+            <p class="abonements-table-text bolt orange">
+              Персональна, без обмежень у відвідуваннях / 8:00 – 23:00
+            </p>
+            <p class="abonements-table-text price">
+              18000 грн (+200 хв. солярія)
+            </p>
+            <p class="abonements-table-text price">12000 грн</p>
+            <p class="abonements-table-text price">7000</p>
+            <p class="abonements-table-text bolt price">2500 грн</p>
+          </li>
+          <li class="abonements-table-item">
+            <p class="abonements-table-text bolt">
+              Персональна, денна / 8:00 – 17:00
+            </p>
+            <p class="abonements-table-text price">-</p>
+            <p class="abonements-table-text price">9500 грн</p>
+            <p class="abonements-table-text price">5500 грн</p>
+            <p class="abonements-table-text price">2000 грн</p>
+          </li>
+        </ul>
+        <h3 class="abonements-subtitle">Разові тренування</h3>
+        <ul class="abonements-card-list">
+          <li class="abonements-card-item">
+            <p class="abonements-card-caption">
+              Самостійні тренування у тренажерній залі
+            </p>
+            <p class="abonements-card-time">8:00 – 23:00</p>
+            <img
+              class="abonements-card-icon"
+              src="images/clock/icon-clock.png"
+              alt="clock"
+            />
+            <p class="abonements-card-price">250₽</p>
+            <p class="abonements-card-trainer">1 тренування</p>
+            <button class="abonements-card-button" type="button">
+              Дізнатися
+            </button>
+          </li>
+          <li class="abonements-card-item">
+            <p class="abonements-card-caption orange">
+              Персональний тренінг з інструктором
+            </p>
+            <p class="abonements-card-time">8:00 – 23:00</p>
+            <img
+              class="abonements-card-icon"
+              src="images/clock/icon-clock.png"
+              alt="clock"
+            />
+            <p class="abonements-card-price">700 грн</p>
+            <p class="abonements-card-trainer">1 тренування</p>
+            <button class="abonements-card-button" type="button">
+              Дізнатися
+            </button>
+          </li>
+          <li class="abonements-card-item">
+            <p class="abonements-card-caption">Зала группових програм</p>
+            <p class="abonements-card-time">
+              графік занять уточнюйте у адміністратора
+            </p>
+            <img
+              class="abonements-card-icon"
+              src="images/clock/icon-clock.png"
+              alt="clock"
+            />
+            <p class="abonements-card-price">300 грн</p>
+            <p class="abonements-card-trainer">1 тренування</p>
+            <button class="abonements-card-button" type="button">
+              Дізнатися
+            </button>
+          </li>
+        </ul>
+      </section>
+      <section class="trainers">
+        <h2 class="trainers-title" id="trainers">Тренери</h2>
+        <ul class="trainers-list">
+          <li class="trainers-item">
+            <img src="images/trainers/trainer1.png" alt="trainer" />
+            <p class="trainer-name">Ілля Панченко</p>
+            <p class="trainer-description">
+              Інструктор тренажерноїх зали <br />Досвід роботи — 4 роки
+            </p>
+          </li>
+          <li class="trainers-item">
+            <img src="images/trainers/trainer2.png" alt="trainer" />
+            <p class="trainer-name">Катерина Михаль</p>
+            <p class="trainer-description">
+              Фітнес-тренер <br />Досвід роботи — 4 роки <br />
+            </p>
+          </li>
+          <li class="trainers-item">
+            <img src="images/trainers/trainer3.png" alt="trainer" />
+            <p class="trainer-name">Юлія Білова</p>
+            <p class="trainer-description">
+              Фітнес-тренер <br />
+              Досвід роботи — 4 роки
+            </p>
+          </li>
+        </ul>
+        <div class="trainers-arrows"></div>
+      </section>
+      <section class="connection">
+        <h3 class="connection-title">Залишились питання?</h3>
+        <p class="connection-text">
+          Залиште Ваш номер телефону і ми
+          <span class="orange"> обов'язково з Вами зв'яжемося</span>
+        </p>
+        <form class="connection-form">
+          <input
+            class="connection-form-text"
+            type="text"
+            placeholder="Введите имя"
+          />
+          <input
+            class="connection-form-text"
+            type="tel"
+            placeholder="Введите телефон"
+          />
+          <button type="button">Отримати консультацію</button>
+          <p class="connection-text">
+            Натискаючи на кнопку, Ви погоджуєтеся із політикию конфеденційності
+          </p>
+        </form>
+      </section>
+      <section class="contacts">
+        <img class="contacts-map" src="images/maps/mapL.png" alt="map" />
+        <h2 class="contacts-title" id="contacts">Контакти</h2>
+        <div class="contacts-container">
+          <div>
+            <img src="images/contacts/location.png" alt="location" />
+            <p>м. Щасливе, вул. Радості 32</p>
+          </div>
+          <div>
+            <img src="images/contacts/clock.png" alt="time of work" />
+            <p>Щоденно з 8:00 до 23:00</p>
+          </div>
+          <div>
+            <img src="images/contacts/phone.png" alt="phone" />
+            <p>+38 099 65 94 663</p>
+          </div>
+          <p>Підписуйтесь на наші соціальні мережі</p>
+          <div>
+            <img src="images/hero/instagram_108066.svg" alt="instagram" />
+            <img src="images/hero/telegram.svg" alt="telegram" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-logo">
+        <img src="images/logo/logoS.png" alt="logo" />
+        <p>@Усі права захищені</p>
+        <p>2023</p>
+      </div>
+      <div class="footer-trainers">
+        <p>Тренери</p>
+        <p>Зали</p>
+      </div>
+      <div class="footer-abonements">
+        <p>Абонементи</p>
+        <p>Абонементи за тривалістю</p>
+        <p>Разові тренування</p>
+      </div>
+      <div class="footer-networks">
+        <p>Наші соцмережі</p>
+        <div>
+          <img src="images/hero/instagram_108066.svg" alt="instagram" />
+          <img src="images/hero/telegram.svg" alt="telegram" />
+        </div>
+      </div>
+      <address class="footer-address">
+        <p>м. Щасливе, вул. Радості 32</p>
+        <p>+38 099 65 94 663</p>
+      </address>
+    </footer>
+  </body>
+</html>

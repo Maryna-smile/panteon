@@ -1,0 +1,389 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--black);
+  color: var(--white);
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+main {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.nav-wrapper {
+  @include _tablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px 0 20px;
+
+  @include _tablet {
+    padding: 40px 40px 0 40px;
+  }
+
+  @include _desktop {
+    padding: 40px 40px 0 40px;
+  }
+}
+
+.burger-menu {
+  color: var(--white);
+
+  @include _tablet {
+    display: none;
+  }
+}
+
+.nav-tel {
+  display: none;
+
+  @include _tablet {
+    display: block;
+    font-weight: 600;
+  }
+}
+
+.nav-link-wrapper {
+  display: none;
+
+  @include _tablet {
+    display: flex;
+    gap: 20px;
+    align-items: baseline;
+    justify-content: center;
+    margin-top: 40px;
+  }
+
+  @include _desktop {
+    margin-top: -20px;
+  }
+}
+
+.nav-link {
+  font-weight: 600;
+  transition: all 200ms ease;
+  color: inherit;
+
+  &:hover {
+    color: var(--orange);
+  }
+}
+
+/* -----------------hero----------- */
+.hero-bg {
+  background-image: url("../images/hero/bgS.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media (min-width: 768px) {
+  .hero-bg {
+    background-image: url("../images/hero/bgM.png");
+  }
+
+  @include _desktop {
+    background-image: url("../images/hero/bgL.png");
+  }
+}
+
+.hero-header {
+  width: 272px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.42;
+  text-align: center;
+  margin: 146px auto 23px;
+
+  @include _tablet {
+    width: 690px;
+    margin: 198px auto 35px;
+  }
+
+  @include _desktop {
+    width: 762px;
+    margin-top: 233px;
+  }
+}
+
+.hero-text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 40px;
+
+  @include _tablet {
+    font-size: 28px;
+    margin-bottom: 35px;
+  }
+}
+
+.hero-button {
+  margin: 0 auto;
+  display: block;
+
+  outline: 0;
+  border: 1px solid var(--white);
+  cursor: pointer;
+  position: relative;
+  width: 260px;
+  height: 60px;
+  transform: skew(-20deg);
+  background: transparent;
+  margin-bottom: 220px;
+  position: relative;
+  z-index: 2;
+
+  @include _tablet {
+    margin-bottom: 370px;
+  }
+
+  @include _desktop {
+    margin-bottom: 354px;
+  }
+}
+
+.hero-button:after {
+  background: var(--orange);
+  content: "";
+  height: calc(100% + 3px);
+  position: absolute;
+  right: 7px;
+  top: 9px;
+  width: 100%;
+  z-index: -2;
+}
+
+.hero-button-text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+  color: var(--white);
+  transform: skew(20deg);
+  z-index: 2;
+}
+
+.hero-icons-wrapper {
+  display: flex;
+  align-items: center;
+  margin-left: 144px;
+
+  @include _tablet {
+    margin-left: 359px;
+  }
+
+  @include _desktop {
+    margin-left: 704px;
+  }
+}
+
+.hero-icons-arrow {
+  width: 18px;
+  height: 9px;
+  margin-right: 63px;
+
+  @include _tablet {
+    margin-right: 286px;
+  }
+
+  @include _desktop {
+    margin-right: 575px;
+  }
+}
+
+.hero-icons-social-wrapper {
+  display: flex;
+  gap: 15px;
+}
+
+.hero-icons-social {
+  width: 22px;
+  height: 22px;
+}
+
+/* ---------------life-style------------------- */
+.life-style {
+}
+
+.advantages {
+}
+
+.visually-hidden {
+}
+
+.advantages-list {
+}
+
+.advantages-item {
+}
+
+.advantages-img {
+}
+
+.advantages-text {
+}
+
+.gallery {
+}
+
+.gallery-title {
+}
+
+.gallery-person-img {
+}
+
+.gallery-gym-img {
+}
+
+.abonements {
+}
+
+.abonements-title {
+}
+
+.abonements-caption {
+}
+
+.abonements-caption-text {
+}
+
+.abonements-list {
+}
+
+.abonements-table-text {
+}
+
+.bolt {
+}
+
+.orange {
+}
+
+.price {
+}
+
+.abonements-table-item {
+}
+
+.abonements-subtitle {
+}
+
+.abonements-card-list {
+}
+
+.abonements-card-item {
+}
+
+.abonements-card-caption {
+}
+
+.abonements-card-time {
+}
+
+.abonements-card-icon {
+}
+
+.abonements-card-price {
+}
+
+.abonements-card-trainer {
+}
+
+.abonements-card-button {
+}
+
+.trainers {
+}
+
+.trainers-title {
+}
+
+.trainers-list {
+}
+
+.trainers-item {
+}
+
+.trainer-name {
+}
+
+.trainer-description {
+}
+
+.trainers-arrows {
+}
+
+.connection {
+}
+
+.connection-title {
+}
+
+.connection-text {
+}
+
+.connection-form {
+}
+
+.connection-form-text {
+}
+
+.contacts {
+}
+
+.contacts-map {
+  width: 272px;
+  height: 204px;
+}
+
+.contacts-title {
+}
+
+.contacts-container {
+}
+
+.footer-logo {
+}
+
+.footer-trainers {
+}
+
+.footer-abonements {
+}
+
+.footer-networks {
+}
+
+.footer-address {
+}
