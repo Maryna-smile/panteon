@@ -5,7 +5,7 @@
 }
 
 @mixin _tablet {
-  @media (min-width: 768px){
+  @media (min-width: 920px){
       @content;
   }
 }
