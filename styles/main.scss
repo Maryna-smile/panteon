@@ -31,9 +31,13 @@ body {
 
 .container {
   margin: 0 auto;
-  width: 320px;
-  padding-left: 15px;
-  padding-right: 15px;
+  // width: 320px;
+  // padding-left: 15px;
+  // padding-right: 15px;
+
+  width: 100%;
+  padding-left: 24px;
+  padding-right: 24px;
 
   @include _tablet {
     width: 768px;
@@ -114,19 +118,19 @@ body {
 }
 
 .burger.active span {
-  position: fixed;
+  position: absolute;
   top: 35px;
   right: 30px;
   transform: scale(0);
 }
 
 .burger.active::before {
-  top: 50%;
+  top: 42%;
   transform: rotate(-45deg) translate(0, -50%);
 }
 
 .burger.active::after {
-  bottom: 49%;
+  bottom: 47%;
   transform: rotate(45deg) translate(0, -50%);
 }
 
@@ -170,23 +174,20 @@ body {
   display: none;
 }
 
-.nav-burger.active {
-  position: relative;
-
+.nav-burger-wrapper.active {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   gap: 5px;
   z-index: 9;
 
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
 
   height: 98px;
   width: 100%;
 
-  // overflow-y: auto;
   padding: 90px 5px;
   padding-bottom: 120px;
   background-color: var(--black);
@@ -195,6 +196,15 @@ body {
   @include _tablet {
     display: none;
   }
+}
+
+.nav-burger.active {
+  max-width: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 5px;
+  z-index: 9;
 }
 
 .nav-link,
@@ -341,7 +351,6 @@ body {
   }
 
   @include _desktop {
-    margin-left: 704px;
     margin-top: -73px;
   }
 }
@@ -473,6 +482,7 @@ body {
 
 .life-style-image {
   display: block;
+  margin: 0 auto;
 
   max-width: 290px;
 
@@ -487,7 +497,8 @@ body {
 }
 
 .life-style-image:nth-child(2) {
-  @include _tablet {}
+  @include _tablet {
+  }
 
   @include _desktop {
     padding-top: 40px;
@@ -573,7 +584,8 @@ body {
 }
 
 //--------------- gallery-----------------
-.gallery {}
+.gallery {
+}
 
 .gallery-title {
   font-weight: 700;
@@ -607,14 +619,19 @@ body {
   }
 }
 
-// .my-swiper {
-//   padding-left: 50px;
-//   padding-right: 50px;
+// .swiper-slide {
+//   width: 250px;
+//   height: 350px;
 // }
 
-// .swiper-wrapper {
-//   transform: translate3d(35px, 0px, 0px);
-// }
+.my-swiper {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.swiper-wrapper {
+  transform: translate3d(35px, 0px, 0px);
+}
 
 .swiper-button-prev::after {
   color: var(--orange);
@@ -625,6 +642,11 @@ body {
     display: block;
     font-size: 10px;
   }
+}
+
+.my-swiper-slide .swiper-slide .swiper-slide-active {
+  width: 250px;
+  height: 350px;
 }
 
 .swiper-button-next::after {
@@ -638,7 +660,7 @@ body {
   }
 }
 
-.swiper-horizontal>.swiper-scrollbar,
+.swiper-horizontal > .swiper-scrollbar,
 .swiper-scrollbar.swiper-scrollbar-horizontal {
   background-color: var(--white);
 
@@ -661,9 +683,9 @@ body {
 }
 
 .my-swiper-slide img {
-  width: 200px;
-  max-width: 100%;
-  height: 280px;
+  width: 250px;
+  // max-width: 350px;
+  height: 350px;
   text-align: center;
 
   @include _tablet {
@@ -682,29 +704,32 @@ body {
   gap: 0;
 }
 
-// .gallery-person-img {
-//   width: 200px;
-//   max-width: 100%;
-//   height: 280px;
-//   text-align: center;
+.gallery-person-img {
+  width: 250px;
+  // max-width: 100%;
+  height: 350px;
+  text-align: center;
+  object-fit: cover;
 
-//   @include _tablet {
-//     width: 305px;
-//     height: 430px;
-//   }
+  @include _tablet {
+    width: 305px;
+    height: 430px;
+  }
 
-//   @include _desktop {
-//     width: 360px;
-//     height: 375px;
-//   }
-// }
+  @include _desktop {
+    width: 360px;
+    height: 375px;
+  }
+}
 
 .gallery-gym-img-wrapper {
   display: flex;
   gap: 0;
 }
 
-.gallery-gym-img {}
+.gallery-gym-img {
+  object-fit: cover;
+}
 
 //--------------- abonements-----------------
 .abonements {
@@ -712,6 +737,8 @@ body {
   padding-bottom: 80px;
   background-color: var(--grey);
   color: var(--black);
+  // overflow: auto;
+  overflow: scroll;
 
   @include _tablet {
     padding-top: 90px;
@@ -741,6 +768,7 @@ body {
   flex-direction: column;
   gap: 40px;
   margin-bottom: 60px;
+  overflow: auto;
 
   @include _tablet {
     margin-bottom: 80px;
@@ -784,7 +812,6 @@ body {
 
 .abonements-table-item {
   display: flex;
-  // justify-content: space-between;
   align-items: baseline;
   gap: 40px;
 }
@@ -807,8 +834,11 @@ body {
 }
 
 .abonements-card-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   @include _tablet {
-    display: flex;
+    flex-direction: row;
     justify-content: center;
     gap: 30px;
   }
@@ -822,7 +852,7 @@ body {
   padding: 30px 40px;
   background-color: var(--white);
   margin-bottom: 30px;
-  width: 100%;
+  width: 290px;
   text-align: center;
 
   @include _tablet {
@@ -864,7 +894,8 @@ body {
   color: rgba(12, 20, 23, 0.5);
 }
 
-.abonements-card-icon {}
+.abonements-card-icon {
+}
 
 .abonements-card-price {
   font-weight: 700;
@@ -1085,26 +1116,27 @@ body {
 .contacts {
   position: relative;
   width: 100%;
-  height: 234px;
 
   text-align: center;
 
   // background-image: url(../images/maps/mapS.png);
   background-repeat: no-repeat;
   background-size: auto;
+  background-position: center;
 
-  @include _tablet {
-    display: block;
-    // position: relative;
-    height: 567px;
+  // @include _tablet {
+  //   display: block;
+  //   // position: relative;
+  //   width: 100%;
+  //   height: 567px;
 
-    background-image: url(../images/maps/mapM.png);
-    background-position: left;
-  }
+  //   background-image: url(../images/maps/mapM.png);
+  //   background-position: left;
+  // }
 
-  @include _desktop {
-    background-image: url(../images/maps/mapL.png);
-  }
+  // @include _desktop {
+  //   background-image: url(../images/maps/mapL.png);
+  // }
 }
 
 .contacts-map {
@@ -1115,11 +1147,19 @@ body {
   margin: 0 auto;
   object-fit: cover;
   object-position: center;
-  // height: auto;
 
   @include _tablet {
-    display: none;
+    // display: block;
+    // position: relative;
+    width: 100%;
+    height: 567px;
   }
+
+  // height: auto;
+
+  // @include _tablet {
+  //   display: none;
+  // }
 }
 
 .contacts-text-container {
@@ -1165,7 +1205,6 @@ body {
   }
 }
 
-
 .contacts-list {
   display: flex;
   flex-direction: column;
@@ -1210,7 +1249,7 @@ body {
 // ---------------------footer-------------------
 
 .footer {
-  padding-top: 450px;
+  // padding-top: 450px;
   padding-bottom: 100px;
 
   @include _tablet {
@@ -1220,9 +1259,14 @@ body {
 
 .footer-flex-wrapper {
   display: flex;
-  justify-content: space-between;
-  gap: 3%;
-  flex-wrap: wrap;
+  flex-direction: column;
+
+  @include _tablet {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3%;
+    flex-wrap: wrap;
+  }
 
   @include _desktop {
     margin-bottom: 24px;
@@ -1278,8 +1322,6 @@ body {
   gap: 15px;
   cursor: pointer;
 }
-
-.footer-address {}
 
 .button-up {
   display: none;

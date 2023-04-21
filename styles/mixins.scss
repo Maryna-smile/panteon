@@ -4,6 +4,12 @@
   }
 }
 
+@mixin _burger-tablet {
+  @media (min-width: 768px){
+      @content;
+  }
+}
+
 @mixin _tablet {
   @media (min-width: 920px){
       @content;
