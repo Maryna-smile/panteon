@@ -237,19 +237,19 @@ body {
 
 /* -----------------hero----------- */
 .hero-bg {
-  background-image: url("../images/hero/bgS.png");
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.1) 100%, rgba(0, 0, 0, 0.4) 100%), url("../images/hero/hero_s@1x.webp");
   background-repeat: no-repeat;
   background-size: cover;
   max-height: 799px;
   padding-bottom: 50px;
 
-  @include _tablet {
-    background-image: url("../images/hero/bgM.png");
+  @include __big-mobile {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.1) 100%, rgba(0, 0, 0, 0.4) 100%), url("../images/hero/hero_m@1x.webp");
     max-height: 950px;
   }
 
   @include _desktop {
-    background-image: url("../images/hero/bgL.png");
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.1) 100%, rgba(0, 0, 0, 0.4) 100%), url("../images/hero/hero_l@1x.webp");
     padding-bottom: 70px;
   }
 }
@@ -605,6 +605,7 @@ body {
   // margin: 0 auto;
   // width: 1160px;
   width: 290px;
+  max-width: 100%;
   // height: 300px;
   height: auto;
 
@@ -729,6 +730,21 @@ body {
 
 .gallery-gym-img {
   object-fit: cover;
+  width: 250px;
+  // max-width: 100%;
+  height: 350px;
+  text-align: center;
+  object-fit: cover;
+
+  @include _tablet {
+    width: 305px;
+    height: 430px;
+  }
+
+  @include _desktop {
+    width: 360px;
+    height: 375px;
+  }
 }
 
 //--------------- abonements-----------------
@@ -970,13 +986,33 @@ body {
 // }
 
 .trainers-item {
-  width: 290px;
+  width: 250px;
   text-align: left;
 
   @include _tablet {
     width: 308px;
   }
 }
+
+.trainer-img {
+  object-fit: cover;
+  width: 250px;
+  // max-width: 100%;
+  height: 350px;
+  text-align: center;
+  object-fit: cover;
+
+  @include _tablet {
+    width: 305px;
+    height: 430px;
+  }
+
+  @include _desktop {
+    width: 360px;
+    height: 375px;
+  }
+}
+
 
 .trainer-name {
   font-weight: 700;

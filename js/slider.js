@@ -42,16 +42,35 @@ const swiper = new Swiper(".swiper", {
   slidesPerView: 2.5,
   spaceBetween: 60,
   
-  // breakpoints: {
-  //   320: {
-  //     slidesPerView: 1.5,
-  //   },
-  //   360: {
-  //     slidesPerView: 2.5,
-  //   },
-  //   768: {
-  //     slidesPerView: 3,
-  //   }
-  // },
+  breakpoints: {
+    300: {
+      slidesPerView: 1,
+      spaceBetween: 15,
+    },
+    400: {
+      slidesPerView: 1.1,
+      spaceBetween: 20,
+    },
+    500: {
+      slidesPerView: 1.2,
+      spaceBetween: 25,
+    },
+    600: {
+      slidesPerView: 1.3,
+      spaceBetween: 30,
+    },
+    800: {
+      slidesPerView: 1.5,
+      spaceBetween: 45,
+    },
+    900: {
+      slidesPerView: 2,
+      spaceBetween: 50,
+    },
+    1200: {
+      slidesPerView: 2.8,
+      spaceBetween: 10,
+    }
+  },
  
 });
