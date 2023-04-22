@@ -31,9 +31,6 @@ body {
 
 .container {
   margin: 0 auto;
-  // width: 320px;
-  // padding-left: 15px;
-  // padding-right: 15px;
 
   width: 100%;
   padding-left: 24px;
@@ -75,9 +72,6 @@ body {
 
 .burger {
   position: relative;
-  // position: fixed;
-  // top: 35px;
-  // right: 30px;
   z-index: 10;
 
   display: flex;
@@ -215,7 +209,6 @@ body {
   color: var(--white);
   text-decoration: none;
   text-align: center;
-  // z-index: 11;
 
   display: block;
   width: 120px;
@@ -237,19 +230,37 @@ body {
 
 /* -----------------hero----------- */
 .hero-bg {
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.1) 100%, rgba(0, 0, 0, 0.4) 100%), url("../images/hero/hero_s@1x.webp");
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.9) 0%,
+      rgba(0, 0, 0, 0.1) 100%,
+      rgba(0, 0, 0, 0.4) 100%
+    ),
+    url("../images/hero/hero_s@1x.webp");
   background-repeat: no-repeat;
   background-size: cover;
   max-height: 799px;
   padding-bottom: 50px;
 
   @include __big-mobile {
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.1) 100%, rgba(0, 0, 0, 0.4) 100%), url("../images/hero/hero_m@1x.webp");
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.9) 0%,
+        rgba(0, 0, 0, 0.1) 100%,
+        rgba(0, 0, 0, 0.4) 100%
+      ),
+      url("../images/hero/hero_m@1x.webp");
     max-height: 950px;
   }
 
   @include _desktop {
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.1) 100%, rgba(0, 0, 0, 0.4) 100%), url("../images/hero/hero_l@1x.webp");
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.9) 0%,
+        rgba(0, 0, 0, 0.1) 100%,
+        rgba(0, 0, 0, 0.4) 100%
+      ),
+      url("../images/hero/hero_l@1x.webp");
     padding-bottom: 70px;
   }
 }
@@ -300,8 +311,6 @@ body {
   transform: skew(-20deg);
   background-color: var(--orange);
   margin-bottom: 220px;
-  // position: relative;
-  // z-index: 2;
 
   transition: all 150ms ease;
 
@@ -578,7 +587,6 @@ body {
 
   @include _desktop {
     text-align: left;
-
     width: 280px;
   }
 }
@@ -753,7 +761,6 @@ body {
   padding-bottom: 80px;
   background-color: var(--grey);
   color: var(--black);
-  // overflow: auto;
   overflow: scroll;
 
   @include _tablet {
@@ -910,9 +917,6 @@ body {
   color: rgba(12, 20, 23, 0.5);
 }
 
-.abonements-card-icon {
-}
-
 .abonements-card-price {
   font-weight: 700;
   font-size: 24px;
@@ -981,10 +985,6 @@ body {
   }
 }
 
-// .trainers-list {
-
-// }
-
 .trainers-item {
   width: 250px;
   text-align: left;
@@ -1012,7 +1012,6 @@ body {
     height: 375px;
   }
 }
-
 
 .trainer-name {
   font-weight: 700;
@@ -1148,61 +1147,36 @@ body {
   color: var(--grey600);
 }
 
-// // -------------------------------contacts---------------------
+//------------------------------contacts---------------------
 .contacts {
   position: relative;
   width: 100%;
 
   text-align: center;
 
-  // background-image: url(../images/maps/mapS.png);
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center;
-
-  // @include _tablet {
-  //   display: block;
-  //   // position: relative;
-  //   width: 100%;
-  //   height: 567px;
-
-  //   background-image: url(../images/maps/mapM.png);
-  //   background-position: left;
-  // }
-
-  // @include _desktop {
-  //   background-image: url(../images/maps/mapL.png);
-  // }
 }
 
 .contacts-map {
-  // position: relative;
-  // width: 320px;
   width: 100%;
   height: 234px;
   margin: 0 auto;
+
   object-fit: cover;
   object-position: center;
 
   @include _tablet {
-    // display: block;
-    // position: relative;
     width: 100%;
     height: 567px;
   }
-
-  // height: auto;
-
-  // @include _tablet {
-  //   display: none;
-  // }
 }
 
 .contacts-text-container {
   padding-top: 50px;
   padding-bottom: 50px;
   background-color: var(--black);
-  // height: 100px;
   width: 100%;
 
   @include _tablet {
@@ -1250,7 +1224,6 @@ body {
   margin-bottom: 30px;
 
   font-size: 16px;
-
   color: var(--white);
 
   @include _desktop {
@@ -1285,7 +1258,6 @@ body {
 // ---------------------footer-------------------
 
 .footer {
-  // padding-top: 450px;
   padding-bottom: 100px;
 
   @include _tablet {
