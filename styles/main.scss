@@ -230,12 +230,7 @@ body {
 
 /* -----------------hero----------- */
 .hero-bg {
-  background-image: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0.9) 0%,
-      rgba(0, 0, 0, 0.1) 100%,
-      rgba(0, 0, 0, 0.4) 100%
-    ),
+  background-image: var(--gradient),
     url("../images/hero/hero_s@1x.webp");
   background-repeat: no-repeat;
   background-size: cover;
@@ -243,23 +238,13 @@ body {
   padding-bottom: 50px;
 
   @include __big-mobile {
-    background-image: linear-gradient(
-        180deg,
-        rgba(0, 0, 0, 0.9) 0%,
-        rgba(0, 0, 0, 0.1) 100%,
-        rgba(0, 0, 0, 0.4) 100%
-      ),
+    background-image: var(--gradient),
       url("../images/hero/hero_m@1x.webp");
     max-height: 950px;
   }
 
   @include _desktop {
-    background-image: linear-gradient(
-        180deg,
-        rgba(0, 0, 0, 0.9) 0%,
-        rgba(0, 0, 0, 0.1) 100%,
-        rgba(0, 0, 0, 0.4) 100%
-      ),
+    background-image: var(--gradient),
       url("../images/hero/hero_l@1x.webp");
     padding-bottom: 70px;
   }
@@ -322,16 +307,6 @@ body {
     margin-bottom: 354px;
   }
 }
-
-// .hero-button:after {
-//   content: "";
-//   height: calc(100% + 3px);
-//   position: absolute;
-//   right: 7px;
-//   top: 9px;
-//   width: 100%;
-//   z-index: -2;
-// }
 
 .hero-button:hover {
   background-color: var(--black);
@@ -506,8 +481,7 @@ body {
 }
 
 .life-style-image:nth-child(2) {
-  @include _tablet {
-  }
+  @include _tablet {}
 
   @include _desktop {
     padding-top: 40px;
@@ -592,8 +566,7 @@ body {
 }
 
 //--------------- gallery-----------------
-.gallery {
-}
+.gallery {}
 
 .gallery-title {
   font-weight: 700;
@@ -610,28 +583,22 @@ body {
 
 // ---------------------------------------------------------------slider--------------------------------------
 .swiper {
-  // margin: 0 auto;
-  // width: 1160px;
   width: 290px;
   max-width: 100%;
-  // height: 300px;
   height: auto;
 
   @include _tablet {
-    width: 738px;
-    // height: 430px;
+   width: 800px;
   }
-
   @include _desktop {
-    width: 1100px;
-    // height: 375px;
+    width: 1200px;
   }
 }
 
-// .swiper-slide {
-//   width: 250px;
-//   height: 350px;
-// }
+.swiper,
+.swiper-container {
+  max-width: 100%;
+}
 
 .my-swiper {
   padding-left: 50px;
@@ -669,7 +636,7 @@ body {
   }
 }
 
-.swiper-horizontal > .swiper-scrollbar,
+.swiper-horizontal>.swiper-scrollbar,
 .swiper-scrollbar.swiper-scrollbar-horizontal {
   background-color: var(--white);
 
@@ -692,8 +659,7 @@ body {
 }
 
 .my-swiper-slide img {
-  width: 250px;
-  // max-width: 350px;
+  width: 100%;
   height: 350px;
   text-align: center;
 
@@ -739,7 +705,6 @@ body {
 .gallery-gym-img {
   object-fit: cover;
   width: 250px;
-  // max-width: 100%;
   height: 350px;
   text-align: center;
   object-fit: cover;
@@ -860,6 +825,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+
   @include _tablet {
     flex-direction: row;
     justify-content: center;
@@ -986,7 +952,7 @@ body {
 }
 
 .trainers-item {
-  width: 250px;
+  width: 100%;
   text-align: left;
 
   @include _tablet {
@@ -996,8 +962,8 @@ body {
 
 .trainer-img {
   object-fit: cover;
-  width: 250px;
-  // max-width: 100%;
+  // width: 250px;
+  max-width: 100%;
   height: 350px;
   text-align: center;
   object-fit: cover;
@@ -1036,23 +1002,23 @@ body {
 
   text-align: center;
 
-  background-image: linear-gradient(rgba(12, 20, 23, 0.4)),
-    url(../images/connection/bgS.png);
+  background-image: var(--gradient),
+    url(../images/connection/bg_s.webp);
   background-repeat: no-repeat;
   background-size: cover;
 
   @include _tablet {
     padding-top: 100px;
     padding-bottom: 120px;
-    background-image: linear-gradient(rgba(12, 20, 23, 0.4)),
-      url(../images/connection/bgMpng.png);
+    background-image: var(--gradient),
+      url(../images/connection/bg_m.webp);
   }
 
   @include _desktop {
     padding-top: 110px;
     padding-bottom: 110px;
-    background-image: linear-gradient(rgba(12, 20, 23, 0.4)),
-      url(../images/connection/bgL.png);
+    background-image: var(--gradient),
+      url(../images/connection/bg_l.webp);
   }
 }
 

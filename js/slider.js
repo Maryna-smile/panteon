@@ -1,12 +1,5 @@
 const swiper = new Swiper(".swiper", {
-  // Optional parameters
-  // direction: 'vertical',
   loop: true,
-
-  // If we need pagination
-  // pagination: {
-  //   el: '.swiper-pagination',
-  // },
 
   // Navigation arrows
   navigation: {
@@ -28,13 +21,6 @@ const swiper = new Swiper(".swiper", {
   mousewheel: {
     sensitivity: 1,
   },
-
-  // effect: 'coverflow',
-  // coverflowEffect: {
-  //   rotate:20,
-  //   stretch:50,
-  //   slideShadow: true,
-  // },
 
   touchRatio: 2,
   slideToClickedSlide: true,
