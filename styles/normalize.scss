@@ -52,14 +52,16 @@ button::-moz-focus-inner {
   padding: 0;
   border: 0;
 }
-// a, a:visited, a:hover {
-//   text-decoration: none;
-//   cursor: pointer;
-// }
-a {
+a, a:visited, a:hover {
   text-decoration: none;
   cursor: pointer;
+  color: inherit;
 }
+// a {
+//   text-decoration: none;
+//   cursor: pointer;
+//   color: inherit;
+// }
 ul,
 li {
   list-style: none;

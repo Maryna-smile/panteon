@@ -7,11 +7,6 @@ const swiper = new Swiper(".swiper", {
     prevEl: ".swiper-button-prev",
   },
 
-  scrollbar: {
-    el: ".swiper-scrollbar",
-    draggable: true,
-  },
-
   keyboard: {
     enabled: true,
     onlyInVieport: true,

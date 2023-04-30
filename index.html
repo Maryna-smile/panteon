@@ -1,52 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Montserrat:wght@400;500;600;700&display=swap"
-    rel="stylesheet" />
-  <link rel="icon" href="images/favicon.ico" />
-  <link rel="stylesheet" href="./styles/index.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-  <title>Panteon</title>
-</head>
-<body>
-  <div class="hero-bg">
-    <header>
-      <div class="container">
-        <div class="nav-wrapper">
-          <div class="nav">
-            <img src="images/logo/logoS.png" loading="lazy" alt="logo" />
-            <div class="burger">
-              <span></span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <title>Panteon</title>
+  </head>
+
+  <body>
+    <div class="hero-bg">
+      <header>
+        <div class="container">
+          <div class="nav-wrapper">
+            <div class="nav">
+              <img src="images/logo/logoS.png" loading="lazy" alt="logo" />
+              <div class="burger">
+                <span></span>
+              </div>
             </div>
+            <a class="nav-tel" href="tel:+38 099 65 94 663"
+              >+38 099 65 94 663</a
+            >
           </div>
-          <p class="nav-tel">+38 099 65 94 663</p>
-        </div>
-        <nav>
-          <ul class="nav-link-wrapper">
-            <li>
-              <a class="nav-link" href="#about">Про нас</a>
-            </li>
-            <li>
-              <a class="nav-link" href="#galery">Галерея</a>
-            </li>
-            <li>
-              <a class="nav-link" href="#abonements">Абонементи</a>
-            </li>
-            <li>
-              <a class="nav-link" href="#trainers">Тренери</a>
-            </li>
-            <li>
-              <a class="nav-link" href="#contacts">Контакти</a>
-            </li>
-          </ul>
-          <div class="nav-burger-wrapper">
-            <ul class="nav-burger">
+          <nav>
+            <ul class="nav-link-wrapper">
               <li>
                 <a class="nav-link" href="#about">Про нас</a>
               </li>
@@ -62,448 +51,734 @@
               <li>
                 <a class="nav-link" href="#contacts">Контакти</a>
               </li>
-              <li>
-                <a class="nav-link active" href="#contacts">+38 099 65 94 663</a>
-              </li>
             </ul>
-          </div>
-        </nav>
-      </div>
-    </header>
-    <!-- --------hero --------->
-    <section class="hero">
-      <div class="container">
-        <h1 class="hero-header">Фітнес клуб Пантеон</h1>
-        <p class="hero-text">Краще за нас тільки боги</p>
-        <button class="hero-button" type="button">
-          <span class="hero-button-text">Отримати консультацію</span>
-        </button>
-        <div class="hero-icons-wrapper">
-          <a href="#footer"> <img class="hero-icons-arrow" src="images/hero/arrow.png" loading="lazy" alt="arrow" /></a>
-          <div class="hero-icons-social-wrapper">
-            <img class="hero-icons-social" src="images/hero/instagram_108066.svg" loading="lazy" alt="instagram" width="22" height="22" />
-            <img class="hero-icons-social" src="images/hero/telegram.svg" loading="lazy" alt="telegram" width="22" height="22" />
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
-  <main>
-    <!-- ----------------life-style---------------------- -->
-    <section class="life-style" id="about">
-      <div class="container">
-        <div class="life-style-flex-wrapper">
-          <div class="life-style-text-wrapper">
-            <h2 class="life-style-title">Новий стиль життя</h2>
-            <p class="life-style-text">
-              Приєднавшись до нашої команди, ви зміните звичний ритм життя та
-              зробите кожен день особливим. Формат наших тренувань дозволить вам
-              розкрити свій потенціал на 100%.
-            </p>
-            <button class="life-style-button" type="button">Отримати консультацію</button>
-          </div>
-          <div class="life-style-image-wrapper">
-            <picture>
-              <source media="(min-width: 920px)"
-                srcset="./images/lifeStyle/girl_l@1x.webp 1x,  ./images/lifeStyle/girl_l@2x.webp 2x" />
-              <source media="(min-width: 460px)"
-                srcset="./images/lifeStyle/girl_m@1x.webp 1x,  ./images/lifeStyle/girl_m@2x.webp 2x" />
-              <source media="(min-width: 320px)"
-                srcset="./images/lifeStyle/girl_s@1x.webp 1x,  ./images/lifeStyle/girl_s@2x.webp 2x" />
-              <img class="life-style-image" src="./images/lifeStyle/girl_l@1x.png" loading="lazy" alt="girl"  />
-            </picture>
-            <picture>
-              <source media="(min-width: 920px)"
-                srcset="./images/lifeStyle/barbell_l@1x.webp 1x,  ./images/lifeStyle/barbell_l@2x.webp 2x" />
-              <source media="(min-width: 460px)"
-                srcset="./images/lifeStyle/barbell_m@1x.webp 1x,  ./images/lifeStyle/barbell_m@2x.webp 2x" />
-              <source media="(min-width: 320px)"
-                srcset="./images/lifeStyle/barbell_s@1x.webp 1x,  ./images/lifeStyle/barbell_s@2x.webp 2x" />
-              <img class="life-style-image" src="./images/lifeStyle/girl_l@1x.png" loading="lazy" alt="girl" />
-            </picture>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ----------------advantages----------------- -->
-    <section class="advantages">
-      <div class="container">
-        <h2 class="visually-hidden">переваги</h2>
-        <ul class="advantages-list">
-          <li class="advantages-item">
-            <img class="advantages-img" src="images/advantages/icon-gym.png" loading="lazy" alt="advantages icon" />
-            <p class="advantages-text">Повнісю укомплектована зала</p>
-          </li>
-          <li class="advantages-item">
-            <img class="advantages-img" src="images/advantages/icon-location.png" loading="lazy" alt="advantages icon" />
-            <p class="advantages-text">Зручне розміщення у центрі міста</p>
-          </li>
-          <li class="advantages-item">
-            <img class="advantages-img" src="images/advantages/icon-barbell.png" loading="lazy" alt="advantages icon" />
-            <p class="advantages-text">Професійне знаряддя</p>
-          </li>
-          <li class="advantages-item">
-            <img class="advantages-img" src="images/advantages/icon-wallet.png" loading="lazy" alt="advantages icon" />
-            <p class="advantages-text">Доступна вартість занять</p>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <!-- -------------- gallery----------------- -->
-    <section class="gallery">
-      <div class="container">
-        <h2 class="gallery-title" id="galery">Галерея</h2>
-      </div>
-      <!-- ---------------------slider ------------------------>
-      <div class="my-swiper swiper">
-        <div class="my-swiper-wrapper swiper-wrapper">
-          <div class="my-swiper-slide swiper-slide">
-            <picture>
-              <source srcset="./images/gallery/person1_s@1x.webp 1x,  ./images/gallery/person1_s@2x.webp 2x"
-                type="image/webp" />
-              <img class="gallery-person-img" src="./images/gallery/person1_s@1x.png" loading="lazy" alt="person1" />
-            </picture>
-          </div>
-          <div class="my-swiper-slide swiper-slide">
-            <picture>
-              <source srcset="./images/gallery/person2_s@1x.webp 1x,  ./images/gallery/person2_s@2x.webp 2x"
-                type="image/webp" />
-              <img class="gallery-person-img" src="./images/gallery/person2_s@1x.png" loading="lazy" alt="person2" />
-            </picture>
-          </div>
-          <div class="my-swiper-slide swiper-slide">
-            <picture>
-              <source srcset="./images/gallery/person3_s@1x.webp 1x,  ./images/gallery/person3_s@2x.webp 2x"
-                type="image/webp" />
-              <img class="gallery-person-img" src="./images/gallery/person3_s@1x.png" loading="lazy" alt="person3" />
-            </picture>
-          </div>
-          <div class="my-swiper-slide swiper-slide">
-            <picture>
-              <source srcset="./images/gallery/person4_s@1x.webp 1x,  ./images/gallery/person4_s@2x.webp 2x"
-                type="image/webp" />
-              <img class="gallery-person-img" src="./images/gallery/person4_s@1x.png" loading="lazy" alt="person4" />
-            </picture>
-          </div>
-        </div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-scrollbar"></div>
-      </div>
-      <!-- ---------------------slider2 ------------------------>
-      <div class="my-swiper swiper">
-        <div class="my-swiper-wrapper swiper-wrapper">
-          <div class="my-swiper-slide swiper-slide">
-            <picture>
-              <source srcset="./images/gallery/gym1@1x.webp 1x, ./images/gallery/gym1@2x.webp  2x" type="image/webp" />
-              <img class="gallery-gym-img" src="./images/gallery/gym1@1x.png" loading="lazy" alt="gym1" />
-            </picture>
-          </div>
-          <div class="my-swiper-slide swiper-slide">
-            <picture>
-              <source srcset="./images/gallery/gym2@1x.webp 1x, ./images/gallery/gym2@2x.webp  2x" type="image/webp" />
-              <img class="gallery-gym-img" src="./images/gallery/gym2@1x.png" loading="lazy" alt="gym2" />
-            </picture>
-          </div>
-          <div class="my-swiper-slide swiper-slide">
-            <picture>
-              <source srcset="./images/gallery/gym3@1x.webp 1x, ./images/gallery/gym3@2x.webp  2x" type="image/webp" />
-              <img class="gallery-gym-img" src="./images/gallery/gym3@1x.png" loading="lazy" alt="gym3" />
-            </picture>
-          </div>
-        </div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-scrollbar"></div>
-      </div>
-
-    </section>
-    <!-- -------------- abonements----------------- -->
-    <section class="abonements">
-      <div class="container">
-        <h2 class="abonements-title" id="abonements">Абонементи</h2>
-        <ul class="abonements-list">
-          <li class="abonements-table-item">
-            <p class="abonements-table-text">Кіл-ть занять</p>
-            <p class="abonements-table-text bolt">1 тренування</p>
-            <p class="abonements-table-text bolt">4 тренування</p>
-            <p class="abonements-table-text bolt">8 тренувань</p>
-            <p class="abonements-table-text bolt orange">12 тренувань</p>
-          </li>
-          <hr class="abonements-table-line">
-          <li class="abonements-table-item">
-            <p class="abonements-table-text bolt orange ">
-              Персональний тренінг з інструктором
-            </p>
-            <p class="abonements-table-text">700 грн</p>
-            <p class="abonements-table-text ">
-              2600 грн <br>(действителен в течении 3 недель)
-            </p>
-            <p class="abonements-table-text ">
-              5200 грн<br> (дійсний протягом 6 тижнів)
-            </p>
-            <p class="abonements-table-text  price   ">
-              7200 грн <br> (дійсний протягом 10 тижнів)
-            </p>
-          </li>
-          <li class="abonements-table-item">
-            <p class="abonements-table-text bolt">
-              Самостійне тренування в тренажерній залі
-            </p>
-            <p class="abonements-table-text ">250 грн</p>
-            <p class="abonements-table-text ">-</p>
-            <p class="abonements-table-text ">
-              1500 грн <br> (дійсний протягом 30 днів)
-            </p>
-            <p class="abonements-table-text ">
-              2000 грн <br>(дійсний протягом 30 днів)
-            </p>
-          </li>
-          <li class="abonements-table-item">
-            <p class="abonements-table-text bolt">Зала групових програм</p>
-            <p class="abonements-table-text ">300 грн</p>
-            <p class="abonements-table-text ">-</p>
-            <p class="abonements-table-text ">
-              2000 грн <br>(дійсний протягом 30 днів)
-            </p>
-            <p class="abonements-table-text ">
-              2750 грн <br>(дійсний протягом 45 днів)
-            </p>
-          </li>
-        </ul>
-        <h3 class="abonements-subtitle">Абонементи за тривалістю</h3>
-        <ul class="abonements-list">
-          <li class="abonements-table-item">
-            <p class="abonements-table-text">Тип карти</p>
-            <p class="abonements-table-text bolt">12 місяців</p>
-            <p class="abonements-table-text bolt orange">6 місяців</p>
-            <p class="abonements-table-text bolt">3 місяці</p>
-            <p class="abonements-table-text bolt">1 місяць</p>
-          </li>
-          <hr class="abonements-table-line">
-          <li class="abonements-table-item">
-            <p class="abonements-table-text bolt orange">
-              Персональна, без обмежень у відвідуваннях / 8:00 – 23:00
-            </p>
-            <p class="abonements-table-text ">
-              18000 грн<br> (+200 хв. солярія)
-            </p>
-            <p class="abonements-table-text price ">12000 грн</p>
-            <p class="abonements-table-text ">7000</p>
-            <p class="abonements-table-text">2500 грн</p>
-          </li>
-          <li class="abonements-table-item">
-            <p class="abonements-table-text bolt">
-              Персональна, денна / 8:00 – 17:00
-            </p>
-            <p class="abonements-table-text ">-</p>
-            <p class="abonements-table-text ">9500 грн</p>
-            <p class="abonements-table-text ">5500 грн</p>
-            <p class="abonements-table-text ">2000 грн</p>
-          </li>
-        </ul>
-        <h3 class="abonements-subtitle">Разові тренування</h3>
-        <ul class="abonements-card-list">
-          <li class="abonements-card-item">
-            <p class="abonements-card-caption">
-              Самостійні тренування у тренажерній залі
-            </p>
-            <div class="abonements-card-clock-wrapper">
-              <img class="abonements-card-icon" src="images/clock/icon-clock.png" loading="lazy" alt="clock" />
-              <p class="abonements-card-time">8:00 – 23:00</p>
+            <div class="nav-burger-wrapper">
+              <ul class="nav-burger">
+                <li>
+                  <a class="nav-link" href="#about">Про нас</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="#galery">Галерея</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="#abonements">Абонементи</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="#trainers">Тренери</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="#contacts">Контакти</a>
+                </li>
+                <li>
+                  <a class="nav-link active" href="tel:+38 099 65 94 663"
+                    >+38 099 65 94 663</a
+                  >
+                </li>
+              </ul>
             </div>
-            <p class="abonements-card-price ">250 грн</p>
-            <p class="abonements-card-trainer">1 тренування</p>
-            <button class="abonements-card-button" type="button">
-              Дізнатися
-            </button>
-          </li>
-          <li class="abonements-card-item">
-            <p class="abonements-card-caption orange">
-              Персональний тренінг з інструктором
-            </p>
-            <div class="abonements-card-clock-wrapper">
-              <img class="abonements-card-icon" src="images/clock/icon-clock.png" loading="lazy" alt="clock" />
-              <p class="abonements-card-time">8:00 – 23:00</p>
+          </nav>
+        </div>
+      </header>
+      <!-- --------hero --------->
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero-header">Фітнес клуб Пантеон</h1>
+          <p class="hero-text">Краще за нас тільки боги</p>
+          <button class="hero-button" type="button">
+            <span class="hero-button-text">Отримати консультацію</span>
+          </button>
+          <div class="hero-icons-wrapper">
+            <a href="#footer">
+              <img
+                class="hero-icons-arrow"
+                src="images/hero/arrow.png"
+                loading="lazy"
+                alt="arrow"
+            /></a>
+            <div class="hero-icons-social-wrapper">
+              <img
+                class="hero-icons-social"
+                src="images/hero/instagram_108066.svg"
+                loading="lazy"
+                alt="instagram"
+                width="22"
+                height="22"
+              />
+              <img
+                class="hero-icons-social"
+                src="images/hero/telegram.svg"
+                loading="lazy"
+                alt="telegram"
+                width="22"
+                height="22"
+              />
             </div>
-            <p class="abonements-card-price ">700 грн</p>
-            <p class="abonements-card-trainer">1 тренування</p>
-            <button class="abonements-card-button" type="button">
-              Дізнатися
-            </button>
-          </li>
-          <li class="abonements-card-item">
-            <p class="abonements-card-caption">Зала группових програм <br> <br></p>
-            <div class="abonements-card-clock-wrapper">
-              <img class="abonements-card-icon" src="images/clock/icon-clock.png" loading="lazy" alt="clock" />
-              <p class="abonements-card-time">
-                уточнюйте у адміністратора</p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <main>
+      <!-- ----------------life-style---------------------- -->
+      <section class="life-style" id="about">
+        <div class="container">
+          <div class="life-style-flex-wrapper">
+            <div class="life-style-text-wrapper">
+              <h2 class="life-style-title">Новий стиль життя</h2>
+              <p class="life-style-text">
+                Приєднавшись до нашої команди, ви зміните звичний ритм життя та
+                зробите кожен день особливим. Формат наших тренувань дозволить
+                вам розкрити свій потенціал на 100%.
+              </p>
+              <button class="life-style-button" type="button">
+                Отримати консультацію
+              </button>
             </div>
-            <p class="abonements-card-price ">300 грн</p>
-            <p class="abonements-card-trainer">1 тренування</p>
-            <button class="abonements-card-button" type="button">
-              Дізнатися
-            </button>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <!-- ----------------------trainers-------------------------------- -->
-    <section class="trainers">
-      <div class="container">
-        <h2 class="trainers-title" id="trainers">Тренери</h2>
-        <!-- ---------------------slider3 ------------------------>
+            <div class="life-style-image-wrapper">
+              <picture>
+                <source
+                  media="(min-width: 920px)"
+                  srcset="
+                    ./images/lifeStyle/girl_l@1x.webp 1x,
+                    ./images/lifeStyle/girl_l@2x.webp 2x
+                  "
+                />
+                <source
+                  media="(min-width: 460px)"
+                  srcset="
+                    ./images/lifeStyle/girl_m@1x.webp 1x,
+                    ./images/lifeStyle/girl_m@2x.webp 2x
+                  "
+                />
+                <source
+                  media="(min-width: 320px)"
+                  srcset="
+                    ./images/lifeStyle/girl_s@1x.webp 1x,
+                    ./images/lifeStyle/girl_s@2x.webp 2x
+                  "
+                />
+                <img
+                  class="life-style-image"
+                  src="./images/lifeStyle/girl_l@1x.png"
+                  loading="lazy"
+                  alt="girl"
+                />
+              </picture>
+              <picture>
+                <source
+                  media="(min-width: 920px)"
+                  srcset="
+                    ./images/lifeStyle/barbell_l@1x.webp 1x,
+                    ./images/lifeStyle/barbell_l@2x.webp 2x
+                  "
+                />
+                <source
+                  media="(min-width: 460px)"
+                  srcset="
+                    ./images/lifeStyle/barbell_m@1x.webp 1x,
+                    ./images/lifeStyle/barbell_m@2x.webp 2x
+                  "
+                />
+                <source
+                  media="(min-width: 320px)"
+                  srcset="
+                    ./images/lifeStyle/barbell_s@1x.webp 1x,
+                    ./images/lifeStyle/barbell_s@2x.webp 2x
+                  "
+                />
+                <img
+                  class="life-style-image"
+                  src="./images/lifeStyle/girl_l@1x.png"
+                  loading="lazy"
+                  alt="girl"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ----------------advantages----------------- -->
+      <section class="advantages">
+        <div class="container">
+          <h2 class="visually-hidden">переваги</h2>
+          <ul class="advantages-list">
+            <li class="advantages-item">
+              <img
+                class="advantages-img"
+                src="images/advantages/icon-gym.png"
+                loading="lazy"
+                alt="advantages icon"
+              />
+              <p class="advantages-text">Повнісю укомплектована зала</p>
+            </li>
+            <li class="advantages-item">
+              <img
+                class="advantages-img"
+                src="images/advantages/icon-location.png"
+                loading="lazy"
+                alt="advantages icon"
+              />
+              <p class="advantages-text">Зручне розміщення у центрі міста</p>
+            </li>
+            <li class="advantages-item">
+              <img
+                class="advantages-img"
+                src="images/advantages/icon-barbell.png"
+                loading="lazy"
+                alt="advantages icon"
+              />
+              <p class="advantages-text">Професійне знаряддя</p>
+            </li>
+            <li class="advantages-item">
+              <img
+                class="advantages-img"
+                src="images/advantages/icon-wallet.png"
+                loading="lazy"
+                alt="advantages icon"
+              />
+              <p class="advantages-text">Доступна вартість занять</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- -------------- gallery----------------- -->
+      <section class="gallery">
+        <div class="container">
+          <h2 class="gallery-title" id="galery">Галерея</h2>
+        </div>
+        <!-- ---------------------slider ------------------------>
         <div class="my-swiper swiper">
           <div class="my-swiper-wrapper swiper-wrapper">
             <div class="my-swiper-slide swiper-slide">
-              <div class="trainers-item">
-                <picture>
-                  <source srcset="./images/trainers/trainer1@1x.webp 1x, ./images/trainers/trainer1@2x.webp  2x"
-                    type="image/webp" />
-                  <img class="trainer-img" src="./images/trainers/trainer1@1x.png" loading="lazy" alt="trainer1" />
-                </picture>
-                <p class="trainer-name">Ілля Панченко</p>
-                <p class="trainer-description">
-                  Інструктор тренажерноїх зали
-                </p>
-                <p class="trainer-description">
-                  Досвід роботи — 4 роки
-                </p>
-              </div>
+              <picture>
+                <source
+                  srcset="
+                    ./images/gallery/person1_s@1x.webp 1x,
+                    ./images/gallery/person1_s@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="gallery-person-img"
+                  src="./images/gallery/person1_s@1x.png"
+                  loading="lazy"
+                  alt="person1"
+                />
+              </picture>
             </div>
             <div class="my-swiper-slide swiper-slide">
-              <div class="trainers-item">
-                <picture>
-                  <source srcset="./images/trainers/trainer2@1x.webp 1x, ./images/trainers/trainer2@2x.webp  2x"
-                    type="image/webp" />
-                  <img class="trainer-img" src="./images/trainers/trainer2@1x.png" loading="lazy" alt="trainer2" />
-                </picture>
-                <p class="trainer-name">Катерина Михаль</p>
-                <p class="trainer-description">
-                  Фітнес-тренер
-                </p>
-                <p class="trainer-description">
-                  Досвід роботи — 4 роки <br />
-                </p>
-              </div>
+              <picture>
+                <source
+                  srcset="
+                    ./images/gallery/person2_s@1x.webp 1x,
+                    ./images/gallery/person2_s@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="gallery-person-img"
+                  src="./images/gallery/person2_s@1x.png"
+                  loading="lazy"
+                  alt="person2"
+                />
+              </picture>
             </div>
-            <div class="trainers-swiper-slide swiper-slide">
-              <div class="trainers-item">
-                <picture>
-                  <source srcset="./images/trainers/trainer3@1x.webp 1x, ./images/trainers/trainer3@2x.webp  2x"
-                    type="image/webp" />
-                  <img class="trainer-img" src="./images/trainers/trainer3@1x.png" loading="lazy" alt="trainer3" />
-                </picture>
-                <p class="trainer-name">Юлія Білова</p>
-                <p class="trainer-description">
-                  Фітнес-тренер
-                </p>
-                <p class="trainer-description">
-                  Досвід роботи — 4 роки
-                </p>
-              </div>
+            <div class="my-swiper-slide swiper-slide">
+              <picture>
+                <source
+                  srcset="
+                    ./images/gallery/person3_s@1x.webp 1x,
+                    ./images/gallery/person3_s@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="gallery-person-img"
+                  src="./images/gallery/person3_s@1x.png"
+                  loading="lazy"
+                  alt="person3"
+                />
+              </picture>
+            </div>
+            <div class="my-swiper-slide swiper-slide">
+              <picture>
+                <source
+                  srcset="
+                    ./images/gallery/person4_s@1x.webp 1x,
+                    ./images/gallery/person4_s@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="gallery-person-img"
+                  src="./images/gallery/person4_s@1x.png"
+                  loading="lazy"
+                  alt="person4"
+                />
+              </picture>
             </div>
           </div>
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
           <div class="swiper-scrollbar"></div>
         </div>
-      </div>
-    </section>
-    <!-- -------------------------connection ------------------------------------ -->
-    <section class="connection">
-      <div class="container">
-        <div class="connection-text-block">
-          <h3 class="connection-title">Залишились питання?</h3>
-          <p class="connection-text">
-            Залиште Ваш номер телефону і ми
-            <span class="orange"> обов'язково з Вами зв'яжемося</span>
-          </p>
-          <form class="connection-form">
-            <input class="connection-form-text" type="text" placeholder="Введите имя" />
-            <input class="connection-form-text" type="tel" placeholder="Введите телефон" />
-            <button class="connection-button" type="button">Отримати консультацію</button>
-            <p class="connection-agreement-text">
-              Натискаючи на кнопку, Ви погоджуєтеся із політикию конфеденційності
-            </p>
-          </form>
+        <!-- ---------------------slider2 ------------------------>
+        <div class="my-swiper swiper">
+          <div class="my-swiper-wrapper swiper-wrapper">
+            <div class="my-swiper-slide swiper-slide">
+              <picture>
+                <source
+                  srcset="
+                    ./images/gallery/gym1@1x.webp 1x,
+                    ./images/gallery/gym1@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="gallery-gym-img"
+                  src="./images/gallery/gym1@1x.png"
+                  loading="lazy"
+                  alt="gym1"
+                />
+              </picture>
+            </div>
+            <div class="my-swiper-slide swiper-slide">
+              <picture>
+                <source
+                  srcset="
+                    ./images/gallery/gym2@1x.webp 1x,
+                    ./images/gallery/gym2@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="gallery-gym-img"
+                  src="./images/gallery/gym2@1x.png"
+                  loading="lazy"
+                  alt="gym2"
+                />
+              </picture>
+            </div>
+            <div class="my-swiper-slide swiper-slide">
+              <picture>
+                <source
+                  srcset="
+                    ./images/gallery/gym3@1x.webp 1x,
+                    ./images/gallery/gym3@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="gallery-gym-img"
+                  src="./images/gallery/gym3@1x.png"
+                  loading="lazy"
+                  alt="gym3"
+                />
+              </picture>
+            </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-scrollbar"></div>
         </div>
-      </div>
-    </section>
-    <!---------------------------------contacts--------------------- -->
-    <section>
-      <div class="contacts">
-        <picture>
-          <source media="(min-width: 920px)" srcset="./images/maps/map_l@1x.webp 1x,  ./images/maps/map_l@2x.webp 2x" />
-          <source media="(min-width: 460px)" srcset="./images/maps/map_m@1x.webp 1x,  ./images/maps/map_m@2x.webp 2x" />
-          <source media="(min-width: 320px)" srcset="./images/maps/map_s@1x.webp 1x,  ./images/maps/map_s@2x.webp 2x" />
-          <img class="contacts-map" src="./images/maps/map_l@1x.jpg" loading="lazy" alt="map" />
-        </picture>
+      </section>
+      <!-- -------------- abonements----------------- -->
+      <section class="abonements">
         <div class="container">
-          <div class="contacts-text-container">
-            <h2 class="contacts-title" id="contacts">Контакти</h2>
+          <h2 class="abonements-title" id="abonements">Абонементи</h2>
+          <ul class="abonements-list">
+            <li class="abonements-table-item">
+              <p class="abonements-table-text">Кіл-ть занять</p>
+              <p class="abonements-table-text bolt">1 тренування</p>
+              <p class="abonements-table-text bolt">4 тренування</p>
+              <p class="abonements-table-text bolt">8 тренувань</p>
+              <p class="abonements-table-text bolt orange">12 тренувань</p>
+            </li>
+            <hr class="abonements-table-line" />
+            <li class="abonements-table-item">
+              <p class="abonements-table-text bolt orange">
+                Персональний тренінг з інструктором
+              </p>
+              <p class="abonements-table-text">700 грн</p>
+              <p class="abonements-table-text">
+                2600 грн <br />(действителен в течении 3 недель)
+              </p>
+              <p class="abonements-table-text">
+                5200 грн<br />
+                (дійсний протягом 6 тижнів)
+              </p>
+              <p class="abonements-table-text price">
+                7200 грн <br />
+                (дійсний протягом 10 тижнів)
+              </p>
+            </li>
+            <li class="abonements-table-item">
+              <p class="abonements-table-text bolt">
+                Самостійне тренування в тренажерній залі
+              </p>
+              <p class="abonements-table-text">250 грн</p>
+              <p class="abonements-table-text">-</p>
+              <p class="abonements-table-text">
+                1500 грн <br />
+                (дійсний протягом 30 днів)
+              </p>
+              <p class="abonements-table-text">
+                2000 грн <br />(дійсний протягом 30 днів)
+              </p>
+            </li>
+            <li class="abonements-table-item">
+              <p class="abonements-table-text bolt">Зала групових програм</p>
+              <p class="abonements-table-text">300 грн</p>
+              <p class="abonements-table-text">-</p>
+              <p class="abonements-table-text">
+                2000 грн <br />(дійсний протягом 30 днів)
+              </p>
+              <p class="abonements-table-text">
+                2750 грн <br />(дійсний протягом 45 днів)
+              </p>
+            </li>
+          </ul>
+          <h3 class="abonements-subtitle" id="time-abonements">
+            Абонементи за тривалістю
+          </h3>
+          <ul class="abonements-list">
+            <li class="abonements-table-item">
+              <p class="abonements-table-text">Тип карти</p>
+              <p class="abonements-table-text bolt">12 місяців</p>
+              <p class="abonements-table-text bolt orange">6 місяців</p>
+              <p class="abonements-table-text bolt">3 місяці</p>
+              <p class="abonements-table-text bolt">1 місяць</p>
+            </li>
+            <hr class="abonements-table-line" />
+            <li class="abonements-table-item">
+              <p class="abonements-table-text bolt orange">
+                Персональна, без обмежень у відвідуваннях / 8:00 – 23:00
+              </p>
+              <p class="abonements-table-text">
+                18000 грн<br />
+                (+200 хв. солярія)
+              </p>
+              <p class="abonements-table-text price">12000 грн</p>
+              <p class="abonements-table-text">7000</p>
+              <p class="abonements-table-text">2500 грн</p>
+            </li>
+            <li class="abonements-table-item">
+              <p class="abonements-table-text bolt">
+                Персональна, денна / 8:00 – 17:00
+              </p>
+              <p class="abonements-table-text">-</p>
+              <p class="abonements-table-text">9500 грн</p>
+              <p class="abonements-table-text">5500 грн</p>
+              <p class="abonements-table-text">2000 грн</p>
+            </li>
+          </ul>
+          <h3 class="abonements-subtitle" id="single">Разові тренування</h3>
+          <ul class="abonements-card-list">
+            <li class="abonements-card-item">
+              <p class="abonements-card-caption">
+                Самостійні тренування у тренажерній залі
+              </p>
+              <div class="abonements-card-clock-wrapper">
+                <img
+                  class="abonements-card-icon"
+                  src="images/clock/icon-clock.png"
+                  loading="lazy"
+                  alt="clock"
+                />
+                <p class="abonements-card-time">8:00 – 23:00</p>
+              </div>
+              <p class="abonements-card-price">250 грн</p>
+              <p class="abonements-card-trainer">1 тренування</p>
+              <button class="abonements-card-button" type="button">
+                Дізнатися
+              </button>
+            </li>
+            <li class="abonements-card-item">
+              <p class="abonements-card-caption orange">
+                Персональний тренінг з інструктором
+              </p>
+              <div class="abonements-card-clock-wrapper">
+                <img
+                  class="abonements-card-icon"
+                  src="images/clock/icon-clock.png"
+                  loading="lazy"
+                  alt="clock"
+                />
+                <p class="abonements-card-time">8:00 – 23:00</p>
+              </div>
+              <p class="abonements-card-price">700 грн</p>
+              <p class="abonements-card-trainer">1 тренування</p>
+              <button class="abonements-card-button" type="button">
+                Дізнатися
+              </button>
+            </li>
+            <li class="abonements-card-item">
+              <p class="abonements-card-caption">
+                Зала группових програм <br />
+                <br />
+              </p>
+              <div class="abonements-card-clock-wrapper">
+                <img
+                  class="abonements-card-icon"
+                  src="images/clock/icon-clock.png"
+                  loading="lazy"
+                  alt="clock"
+                />
+                <p class="abonements-card-time">уточнюйте у адміністратора</p>
+              </div>
+              <p class="abonements-card-price">300 грн</p>
+              <p class="abonements-card-trainer">1 тренування</p>
+              <button class="abonements-card-button" type="button">
+                Дізнатися
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- ----------------------trainers-------------------------------- -->
+      <section class="trainers">
+        <div class="container">
+          <h2 class="trainers-title" id="trainers">Тренери</h2>
+          <!-- ---------------------slider3 ------------------------>
+          <div class="my-swiper swiper">
+            <div class="my-swiper-wrapper swiper-wrapper">
+              <div class="my-swiper-slide swiper-slide">
+                <div class="trainers-item">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/trainers/trainer1@1x.webp 1x,
+                        ./images/trainers/trainer1@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <img
+                      class="trainer-img"
+                      src="./images/trainers/trainer1@1x.png"
+                      loading="lazy"
+                      alt="trainer1"
+                    />
+                  </picture>
+                  <p class="trainer-name">Ілля Панченко</p>
+                  <p class="trainer-description">
+                    Інструктор тренажерноїх зали
+                  </p>
+                  <p class="trainer-description">Досвід роботи — 4 роки</p>
+                </div>
+              </div>
+              <div class="my-swiper-slide swiper-slide">
+                <div class="trainers-item">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/trainers/trainer2@1x.webp 1x,
+                        ./images/trainers/trainer2@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <img
+                      class="trainer-img"
+                      src="./images/trainers/trainer2@1x.png"
+                      loading="lazy"
+                      alt="trainer2"
+                    />
+                  </picture>
+                  <p class="trainer-name">Катерина Михаль</p>
+                  <p class="trainer-description">Фітнес-тренер</p>
+                  <p class="trainer-description">
+                    Досвід роботи — 4 роки <br />
+                  </p>
+                </div>
+              </div>
+              <div class="trainers-swiper-slide swiper-slide">
+                <div class="trainers-item">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/trainers/trainer3@1x.webp 1x,
+                        ./images/trainers/trainer3@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <img
+                      class="trainer-img"
+                      src="./images/trainers/trainer3@1x.png"
+                      loading="lazy"
+                      alt="trainer3"
+                    />
+                  </picture>
+                  <p class="trainer-name">Юлія Білова</p>
+                  <p class="trainer-description">Фітнес-тренер</p>
+                  <p class="trainer-description">Досвід роботи — 4 роки</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </div>
+      </section>
+      <!-- -------------------------connection ------------------------------------ -->
+      <section class="connection">
+        <div class="container">
+          <div class="connection-text-block">
+            <h3 class="connection-title">Залишились питання?</h3>
+            <p class="connection-text">
+              Залиште Ваш номер телефону і ми
+              <span class="orange"> обов'язково з Вами зв'яжемося</span>
+            </p>
+            <form class="connection-form">
+              <input
+                class="connection-form-text"
+                type="text"
+                placeholder="Введите имя"
+              />
+              <input
+                class="connection-form-text"
+                type="tel"
+                placeholder="Введите телефон"
+              />
+              <button class="connection-button" type="submit">
+                Отримати консультацію
+              </button>
+              <p class="connection-agreement-text">
+                Натискаючи на кнопку, Ви погоджуєтеся із політикию
+                конфеденційності
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!---------------------------------contacts--------------------- -->
+      <section>
+        <div class="contacts">
+          <picture>
+            <source
+              media="(min-width: 920px)"
+              srcset="
+                ./images/maps/map_l@1x.webp 1x,
+                ./images/maps/map_l@2x.webp 2x
+              "
+            />
+            <source
+              media="(min-width: 460px)"
+              srcset="
+                ./images/maps/map_m@1x.webp 1x,
+                ./images/maps/map_m@2x.webp 2x
+              "
+            />
+            <source
+              media="(min-width: 320px)"
+              srcset="
+                ./images/maps/map_s@1x.webp 1x,
+                ./images/maps/map_s@2x.webp 2x
+              "
+            />
+            <img
+              class="contacts-map"
+              src="./images/maps/map_l@1x.jpg"
+              loading="lazy"
+              alt="map"
+            />
+          </picture>
+          <div class="container">
+            <div class="contacts-text-container">
+              <h2 class="contacts-title" id="contacts">Контакти</h2>
 
-            <ul class="contacts-list">
-              <li class="contacts-item">
-                <img src="images/contacts/location.png" loading="lazy" alt="location" />
-                <p>м. Щасливе, вул. Світла, 11</p>
-              </li>
-              <li class="contacts-item">
-                <img src="images/contacts/clock.png" loading="lazy" alt="time of work" />
-                <p>Щоденно з 8:00 до 23:00</p>
-              </li>
-              <li class="contacts-item">
-                <img src="images/contacts/phone.png" loading="lazy" alt="phone" />
-                <p>+38 099 65 94 663</p>
-              </li>
-            </ul>
-            <p class="contacts-subscribe">Підписуйтесь на наші соцмережі</p>
-            <div class="contacts-socials">
-              <img src="images/hero/instagram_108066.svg" loading="lazy" alt="instagram" />
-              <img src="images/hero/telegram.svg" loading="lazy" alt="telegram" />
+              <ul class="contacts-list">
+                <li class="contacts-item">
+                  <img
+                    src="images/contacts/location.png"
+                    loading="lazy"
+                    alt="location"
+                  />
+                  <p>м. Щасливе, вул. Світла, 11</p>
+                </li>
+                <li class="contacts-item">
+                  <img
+                    src="images/contacts/clock.png"
+                    loading="lazy"
+                    alt="time of work"
+                  />
+                  <p>Щоденно з 8:00 до 23:00</p>
+                </li>
+                <li class="contacts-item">
+                  <img
+                    src="images/contacts/phone.png"
+                    loading="lazy"
+                    alt="phone"
+                  />
+                  <a href="tel:+38 099 65 94 663">+38 099 65 94 663</a>
+                </li>
+              </ul>
+              <p class="contacts-subscribe">Підписуйтесь на наші соцмережі</p>
+              <div class="contacts-socials">
+                <img
+                  src="images/hero/instagram_108066.svg"
+                  loading="lazy"
+                  alt="instagram"
+                />
+                <img
+                  src="images/hero/telegram.svg"
+                  loading="lazy"
+                  alt="telegram"
+                />
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-  </main>
-  <a href="#" class="button-up">
-    &#8593;
-  </a>
-  <!-- ---------------------footer------------------- -->
-  <footer class="footer" id="footer">
-    <div class="container">
-      <div class="footer-flex-wrapper">
-        <div class="footer-logo-block">
-          <img class="footer-logo-img" src="images/logo/logoS.png" loading="lazy" alt="logo" />
-          <p>@ Усі права захищені</p>
-          <p>2023</p>
-        </div>
-        <div class="footer-servises">
-          <p>Тренери</p>
-          <p>Зали</p>
-          <p>Абонементи</p>
-          <p>Абонементи за тривалістю</p>
-          <p>Разові тренування</p>
-        </div>
-        <div class="footer-contacts">
-          <div class="footer-networks-wrapper">
-            <p>Наші соцмережі</p>
-            <div class="footer-networks">
-              <img src="images/hero/instagram_108066.svg" loading="lazy" alt="instagram" />
-              <img src="images/hero/telegram.svg" loading="lazy" alt="telegram" />
-            </div>
+      </section>
+    </main>
+    <a href="#" class="button-up"> &#8593; </a>
+    <!-- ---------------------footer------------------- -->
+    <footer class="footer" id="footer">
+      <div class="container">
+        <div class="footer-flex-wrapper">
+          <div class="footer-logo-block">
+            <img
+              class="footer-logo-img"
+              src="images/logo/logoS.png"
+              loading="lazy"
+              alt="logo"
+            />
+            <p>@ Усі права захищені</p>
+            <p>2023</p>
           </div>
-          <address>
-          <p>м. Щасливе, вул. Світла, 11</p>
-          <p>+38 099 65 94 663</p>
-          </address>
+          <div class="footer-servises">
+            <a class="footer-servise" href="#trainers">Тренери</a>
+            <a class="footer-servise" href="#galery">Зали</a>
+            <a class="footer-servise" href="#abonements">Абонементи</a>
+            <a class="footer-servise" href="#time-abonements"
+              >Абонементи за тривалістю</a
+            >
+            <a class="footer-servise" href="#single">Разові тренування</a>
+          </div>
+          <div class="footer-contacts">
+            <div class="footer-networks-wrapper">
+              <p>Наші соцмережі</p>
+              <div class="footer-networks">
+                <img
+                  src="images/hero/instagram_108066.svg"
+                  loading="lazy"
+                  alt="instagram"
+                />
+                <img
+                  src="images/hero/telegram.svg"
+                  loading="lazy"
+                  alt="telegram"
+                />
+              </div>
+            </div>
+            <address>
+              <p>м. Щасливе, вул. Світла, 11</p>
+              <a href="tel:+38 099 65 94 663">+38 099 65 94 663</a>
+            </address>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
-  <script src="./js/burger.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-  <script src="./js/slider.js"></script>
-</body>
+    </footer>
+    <script src="./js/burger.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./js/slider.js"></script>
+  </body>
 </html>
