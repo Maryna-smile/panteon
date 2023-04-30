@@ -1288,7 +1288,17 @@ body {
 }
 
 .footer-servise {
-color: var(--white);
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 200ms ease;
+  color: var(--white);
+  text-decoration: none;
+
+
+  &:hover,
+  &:focus {
+    color: var(--orange);
+  }
 }
 
 .footer-contacts {
